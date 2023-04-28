@@ -1,0 +1,10 @@
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\bin\Debug\Rent_Car_Proje_Veritabani.exe.config
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\bin\Debug\Rent_Car_Proje_Veritabani.exe
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\bin\Debug\Rent_Car_Proje_Veritabani.pdb
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.csproj.AssemblyReference.cache
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.csproj.SuggestedBindingRedirects.cache
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.Properties.Resources.resources
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.csproj.GenerateResource.cache
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.csproj.CoreCompileInputs.cache
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.exe
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.pdb
