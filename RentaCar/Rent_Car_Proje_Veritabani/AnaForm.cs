@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Rent_Car_Proje_Veritabani
 {
-    public partial class Form1 : Form
+    public partial class AnaForm : Form
     {
-        public Form1()
+        public AnaForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            formLogin login = new formLogin();
-            login.ShowDialog();
-            this.Hide();
         }
     }
 }
