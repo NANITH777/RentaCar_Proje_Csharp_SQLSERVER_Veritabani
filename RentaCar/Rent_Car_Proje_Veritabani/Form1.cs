@@ -23,23 +23,12 @@ namespace Rent_Car_Proje_Veritabani
             Application.Exit();
         }
 
-        private void btnadmin_Click(object sender, EventArgs e)
-        {
-            formLogin login = new formLogin();
-            login.ShowDialog();
-            this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void btnlogin_Click(object sender, EventArgs e)
         {
 
             SqlConnection connect = new SqlConnection("Data Source=DESKTOP-BOU9IP8;Initial Catalog=RentaCar;Integrated Security=True");
-            SqlCommand com = new SqlCommand();
+            
           
 
             try
@@ -48,8 +37,7 @@ namespace Rent_Car_Proje_Veritabani
                 {
                     if (comboBox1.SelectedItem.ToString() == "Admin")
                     {
-                        //SqlConnection connect = new SqlConnection("Data Source=DESKTOP-BOU9IP8;Initial Catalog=RentaCar;Integrated Security=True");
-                        //SqlCommand com = new SqlCommand();
+                        SqlCommand com = new SqlCommand();
                         connect.Open();
                         com.Connection = connect;
                         com.CommandText = "select * from Kullanici_Bilgi where kullanici_adi= '" + txtkullanici.Text +
@@ -72,25 +60,26 @@ namespace Rent_Car_Proje_Veritabani
                     }
                     else
                     {
-                        string query = "select * from musteri where tc = '" + txtkullanici.Text +
-                            "' and sifre = '" + txtsifre.Text + "'";
+
+                        SqlCommand com2 = new SqlCommand();
                         connect.Open();
+                        com2.Connection = connect;
+                        com2.CommandText = "select * from musteri where tc = '" + txtkullanici.Text +"' and sifre = '" + txtsifre.Text + "'";
 
-                        SqlDataAdapter adapt = new SqlDataAdapter(query, connect);
-                        DataTable tablo = new DataTable();
-                        adapt.Fill(tablo);
-
-                        if (tablo.Rows.Count > 0)
+                        SqlDataReader reader = com2.ExecuteReader();
+                        if (reader.Read())
                         {
+                            MessageBox.Show("Giris basarili!!!");
                             formMusteri musteri = new formMusteri();
                             musteri.Show();
                             this.Hide();
                         }
+
                         else
                         {
-                            MessageBox.Show("Hatali kullanici adi veya sifre", "Yanlis Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            connect.Close();
+                            MessageBox.Show("Hatali kullanici adi veya sifre", "Yanlis Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);  
                         }
+                        connect.Close();
                     }
                 }
                 else //IF the user has not choose a role it will show error MessageBox

@@ -40,5 +40,23 @@ namespace Rent_Car_Proje_Veritabani
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            formMusteriEkle ekle = new formMusteriEkle();
+            ekle.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            formMusteriListeleme liste = new formMusteriListeleme();
+            liste.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formArabaKayit kayit = new formArabaKayit();
+            kayit.ShowDialog();
+        }
     }
 }
