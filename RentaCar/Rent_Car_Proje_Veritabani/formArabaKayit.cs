@@ -90,23 +90,24 @@ namespace Rent_Car_Proje_Veritabani
         {
             string cumle = "insert into arac(plaka, marka, seri, yil, renk, koltuksayisi, yakit, kiraucreti, resim, tarih, durumu) " +
                 "values(@plaka, @marka, @seri, @yil, @renk, @koltuksayisi, @yakit, @kiraucreti, @resim, @tarih, @durumu)";
-            SqlCommand query2 = new SqlCommand();
-            query2.Parameters.AddWithValue("@plaka", plakatxt.Text);
-            query2.Parameters.AddWithValue("@marka", markacombo.Text);
-            query2.Parameters.AddWithValue("@seri", sericombo.Text);
-            query2.Parameters.AddWithValue("@yil", yiltxt.Text);
-            query2.Parameters.AddWithValue("@renk", renktxt.Text);
-            query2.Parameters.AddWithValue("@koltuksayisi", int.Parse(txtkoltuk.Text));
-            query2.Parameters.AddWithValue("@yakit", yakitcombo.Text);
-            query2.Parameters.AddWithValue("@kiraucreti", int.Parse(ucrettxt.Text));
-            query2.Parameters.AddWithValue("@resim", pictureBox1.ImageLocation);
-            query2.Parameters.AddWithValue("@tarih", DateTime.Now.ToString());
-            query2.Parameters.AddWithValue("@durumu", "BOS");
-            arackiralama.ekle_sil_guncelle(query2, cumle);
+            SqlCommand com2 = new SqlCommand();
+            com2.Parameters.AddWithValue("@plaka", plakatxt.Text);
+            com2.Parameters.AddWithValue("@marka", markacombo.Text);
+            com2.Parameters.AddWithValue("@seri", sericombo.Text);
+            com2.Parameters.AddWithValue("@yil", yiltxt.Text);
+            com2.Parameters.AddWithValue("@renk", renktxt.Text);
+            com2.Parameters.AddWithValue("@koltuksayisi", int.Parse(txtkoltuk.Text));
+            com2.Parameters.AddWithValue("@yakit", yakitcombo.Text);
+            com2.Parameters.AddWithValue("@kiraucreti", int.Parse(ucrettxt.Text));
+            com2.Parameters.AddWithValue("@resim", pictureBox1.ImageLocation);
+            com2.Parameters.AddWithValue("@tarih", DateTime.Now.ToString());
+            com2.Parameters.AddWithValue("@durumu", "BOS");
+            arackiralama.ekle_sil_guncelle(com2, cumle);
             sericombo.Items.Clear();
             foreach (Control item in Controls) if (item is TextBox) item.Text = "";
             foreach (Control item in Controls) if (item is ComboBox) item.Text = "";
             pictureBox1.ImageLocation = "";
+
         }
     }
 }

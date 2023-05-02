@@ -96,6 +96,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RentaCarDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="sqldataAdaptater.cs" />
     <EmbeddedResource Include="AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </EmbeddedResource>

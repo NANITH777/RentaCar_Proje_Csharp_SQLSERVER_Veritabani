@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Rent_Car_Proje_Veritabani
 {
@@ -29,6 +30,33 @@ namespace Rent_Car_Proje_Veritabani
             connect.Close();
             return tablo;
         }
+
+        public void Bos_Araclar(ComboBox combo, string sorgu)
+        {
+            connect.Open();
+            SqlCommand komut = new SqlCommand(sorgu, connect);
+            SqlDataReader read = komut.ExecuteReader();
+            while (read.Read())
+            {
+                combo.Items.Add(read["plaka"].ToString());
+            }
+            connect.Close();
+        }
+        public void TC_Ara(TextBox tcara, TextBox tc, TextBox sifre, TextBox adsoyad, TextBox telefon, string sorgu)
+        {
+            connect.Open();
+            SqlCommand komut = new SqlCommand(sorgu, connect);
+            SqlDataReader read = komut.ExecuteReader();
+            while (read.Read())
+            {
+                tc.Text = read["tc"].ToString();
+                sifre.Text = read["sifre"].ToString();
+                adsoyad.Text = read["adsoyad"].ToString();
+                telefon.Text = read["telefon"].ToString();
+            }
+            connect.Close();
+        }
+
     }
 
 }
