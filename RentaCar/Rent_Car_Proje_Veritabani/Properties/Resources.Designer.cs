@@ -63,6 +63,36 @@ namespace Rent_Car_Proje_Veritabani.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _15860335521644989902_64 {
+            get {
+                object obj = ResourceManager.GetObject("15860335521644989902-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _15860335521644989902_641 {
+            get {
+                object obj = ResourceManager.GetObject("15860335521644989902-641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AdobeStock_65104979_Preview {
+            get {
+                object obj = ResourceManager.GetObject("AdobeStock_65104979_Preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bg3 {
             get {
                 object obj = ResourceManager.GetObject("bg3", resourceCulture);
@@ -83,6 +113,16 @@ namespace Rent_Car_Proje_Veritabani.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_58 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-58", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Nissan_Rogue1 {
             get {
                 object obj = ResourceManager.GetObject("Nissan_Rogue1", resourceCulture);
@@ -96,6 +136,16 @@ namespace Rent_Car_Proje_Veritabani.Properties {
         internal static System.Drawing.Bitmap RentaCar {
             get {
                 object obj = ResourceManager.GetObject("RentaCar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user {
+            get {
+                object obj = ResourceManager.GetObject("user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

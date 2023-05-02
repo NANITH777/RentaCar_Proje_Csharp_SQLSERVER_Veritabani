@@ -34,6 +34,7 @@ namespace Rent_Car_Proje_Veritabani
             query2.Parameters.AddWithValue("@dogumtarihi", dateValue.Date);
 
             arac_kiralama.ekle_sil_guncelle(query2, cumle);
+            messageBoxform.Show("Musteri Eklendi!!!!");
             foreach (Control item in Controls) if (item is TextBox) item.Text = "";
         }
 

@@ -46,21 +46,20 @@ namespace Rent_Car_Proje_Veritabani
                         SqlDataReader reader = com.ExecuteReader();
                         if (reader.Read())
                         {
-                            MessageBox.Show("Giris basarili!!!");
+                            messageBoxform.Show("Giris basarili!!!");
                             AnaForm ana = new AnaForm();
                             ana.ShowDialog();
                             this.Hide();
                         }
                         else
                         {
-                            MessageBox.Show("Hatali kullanici adi veya sifre");
+                            messageBoxform.Show("Hatali kullanici adi veya sifre");
                         }
                         connect.Close();
                       
                     }
                     else
                     {
-
                         SqlCommand com2 = new SqlCommand();
                         connect.Open();
                         com2.Connection = connect;
@@ -69,7 +68,7 @@ namespace Rent_Car_Proje_Veritabani
                         SqlDataReader reader = com2.ExecuteReader();
                         if (reader.Read())
                         {
-                            MessageBox.Show("Giris basarili!!!");
+                            messageBoxform.Show("Giris basarili!!!");
                             formMusteri musteri = new formMusteri();
                             musteri.Show();
                             this.Hide();
@@ -89,8 +88,13 @@ namespace Rent_Car_Proje_Veritabani
             }
             catch (Exception error)
             {
-                MessageBox.Show(error.Message);
+                messageBoxform.Show(error.Message);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

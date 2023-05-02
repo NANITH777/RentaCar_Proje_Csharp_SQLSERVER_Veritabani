@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMusteriEkle));
             this.btnekle = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,6 +48,7 @@
             this.txtsifre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // btnekle
@@ -54,10 +57,11 @@
             this.btnekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnekle.ForeColor = System.Drawing.Color.OrangeRed;
             this.btnekle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnekle.ImageIndex = 1;
-            this.btnekle.Location = new System.Drawing.Point(190, 430);
+            this.btnekle.ImageIndex = 0;
+            this.btnekle.ImageList = this.ımageList1;
+            this.btnekle.Location = new System.Drawing.Point(173, 430);
             this.btnekle.Name = "btnekle";
-            this.btnekle.Size = new System.Drawing.Size(101, 73);
+            this.btnekle.Size = new System.Drawing.Size(114, 73);
             this.btnekle.TabIndex = 23;
             this.btnekle.Text = "Ekle";
             this.btnekle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -222,6 +226,13 @@
             this.panel2.Size = new System.Drawing.Size(44, 49);
             this.panel2.TabIndex = 53;
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "add-pers.png");
+            this.ımageList1.Images.SetKeyName(1, "cancel-button.png");
+            // 
             // formMusteriEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,5 +285,6 @@
         private System.Windows.Forms.TextBox txtsifre;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ImageList ımageList1;
     }
 }

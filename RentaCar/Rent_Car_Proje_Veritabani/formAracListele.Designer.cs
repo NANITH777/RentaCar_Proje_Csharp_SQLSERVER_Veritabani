@@ -367,6 +367,7 @@
             this.Controls.Add(this.plakatxt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formAracListele";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formAracListele";
             this.Load += new System.EventHandler(this.formAracListele_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -89,6 +89,12 @@
     <Compile Include="formMusteriListeleme.Designer.cs">
       <DependentUpon>formMusteriListeleme.cs</DependentUpon>
     </Compile>
+    <Compile Include="messageBoxform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messageBoxform.Designer.cs">
+      <DependentUpon>messageBoxform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RentaCarDataSet.Designer.cs">
@@ -109,11 +115,17 @@
     <EmbeddedResource Include="formAracListele.resx">
       <DependentUpon>formAracListele.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formMusteri.resx">
+      <DependentUpon>formMusteri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formMusteriEkle.resx">
       <DependentUpon>formMusteriEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formMusteriListeleme.resx">
       <DependentUpon>formMusteriListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messageBoxform.resx">
+      <DependentUpon>messageBoxform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -160,6 +172,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15860335521644989902-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdobeStock_65104979_Preview.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15860335521644989902-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-58.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

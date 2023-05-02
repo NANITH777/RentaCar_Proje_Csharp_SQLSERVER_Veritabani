@@ -103,6 +103,7 @@ namespace Rent_Car_Proje_Veritabani
             com2.Parameters.AddWithValue("@tarih", DateTime.Now.ToString());
             com2.Parameters.AddWithValue("@durumu", "BOS");
             arackiralama.ekle_sil_guncelle(com2, cumle);
+            messageBoxform.Show("Araba Eklendi!!!!!");
             sericombo.Items.Clear();
             foreach (Control item in Controls) if (item is TextBox) item.Text = "";
             foreach (Control item in Controls) if (item is ComboBox) item.Text = "";

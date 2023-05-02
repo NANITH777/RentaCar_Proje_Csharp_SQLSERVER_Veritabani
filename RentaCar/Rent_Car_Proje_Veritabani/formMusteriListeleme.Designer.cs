@@ -314,6 +314,7 @@
             this.Controls.Add(this.txtTc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formMusteriListeleme";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formMusteriListeleme";
             this.Load += new System.EventHandler(this.formMusteriListeleme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
