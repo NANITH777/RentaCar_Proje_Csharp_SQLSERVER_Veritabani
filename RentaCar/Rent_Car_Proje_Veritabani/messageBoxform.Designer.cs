@@ -40,11 +40,11 @@
             // lbltext
             // 
             this.lbltext.AutoSize = true;
-            this.lbltext.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltext.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltext.ForeColor = System.Drawing.Color.Black;
             this.lbltext.Location = new System.Drawing.Point(55, 40);
             this.lbltext.Name = "lbltext";
-            this.lbltext.Size = new System.Drawing.Size(40, 15);
+            this.lbltext.Size = new System.Drawing.Size(59, 23);
             this.lbltext.TabIndex = 0;
             this.lbltext.Text = "[TEXT]";
             // 

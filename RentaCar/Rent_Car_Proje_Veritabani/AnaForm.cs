@@ -64,5 +64,11 @@ namespace Rent_Car_Proje_Veritabani
             formAracListele liste = new formAracListele();
             liste.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            formSozlesme sozlesme = new formSozlesme();
+            sozlesme.ShowDialog();
+        }
     }
 }

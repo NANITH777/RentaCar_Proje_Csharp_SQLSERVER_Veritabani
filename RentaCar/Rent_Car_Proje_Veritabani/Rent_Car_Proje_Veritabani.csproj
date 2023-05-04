@@ -89,6 +89,12 @@
     <Compile Include="formMusteriListeleme.Designer.cs">
       <DependentUpon>formMusteriListeleme.cs</DependentUpon>
     </Compile>
+    <Compile Include="formSozlesme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSozlesme.Designer.cs">
+      <DependentUpon>formSozlesme.cs</DependentUpon>
+    </Compile>
     <Compile Include="messageBoxform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formMusteriListeleme.resx">
       <DependentUpon>formMusteriListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSozlesme.resx">
+      <DependentUpon>formSozlesme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="messageBoxform.resx">
       <DependentUpon>messageBoxform.cs</DependentUpon>
