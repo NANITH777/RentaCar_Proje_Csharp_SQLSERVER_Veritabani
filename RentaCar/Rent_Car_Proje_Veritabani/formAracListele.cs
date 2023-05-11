@@ -89,7 +89,7 @@ namespace Rent_Car_Proje_Veritabani
                 if (markacombo.SelectedIndex == 0)
                 {
                     sericombo.Items.Add("M3");
-                    sericombo.Items.Add("M4");
+                    sericombo.Items.Add("M5");
                     sericombo.Items.Add("X3");
                     sericombo.Items.Add("X5");
                 }
@@ -141,15 +141,15 @@ namespace Rent_Car_Proje_Veritabani
                 }
                 if (comboAraclar.SelectedIndex == 1)
                 {
-                    string cumle = " select * from arac where durumu= 'BOS'";
+                    string query = " select * from arac where durumu= 'BOS'";
                     SqlDataAdapter adtr2 = new SqlDataAdapter();
-                    dataGridView1.DataSource = arackiralama.listele(adtr2, cumle);
+                    dataGridView1.DataSource = arackiralama.listele(adtr2, query);
                 }
                 if (comboAraclar.SelectedIndex == 2)
                 {
-                    string cumle = " select * from arac where durumu= ' DOLU'";
-                    SqlDataAdapter adtr2 = new SqlDataAdapter();
-                    dataGridView1.DataSource = arackiralama.listele(adtr2, cumle);
+                    string query2 = " select * from arac where durumu= ' DOLU'";
+                    SqlDataAdapter adtr3 = new SqlDataAdapter();
+                    dataGridView1.DataSource = arackiralama.listele(adtr3, query2);
                 }
             }
             catch
@@ -161,9 +161,9 @@ namespace Rent_Car_Proje_Veritabani
         private void btnsil_Click(object sender, EventArgs e)
         {
             DataGridViewRow satir = dataGridView1.CurrentRow;
-            string cumle = " delete from arac where plaka='" + satir.Cells["plaka"].Value.ToString() + "'";
+            string query = " delete from arac where plaka='" + satir.Cells["plaka"].Value.ToString() + "'";
             SqlCommand com2 = new SqlCommand();
-            arackiralama.ekle_sil_guncelle(com2, cumle);
+            arackiralama.ekle_sil_guncelle(com2, query);
             YenileAraclistele();
             pictureBox2.ImageLocation = "";
             sericombo.Items.Clear();

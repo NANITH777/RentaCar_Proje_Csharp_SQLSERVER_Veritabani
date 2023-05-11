@@ -89,11 +89,35 @@
     <Compile Include="formMusteriListeleme.Designer.cs">
       <DependentUpon>formMusteriListeleme.cs</DependentUpon>
     </Compile>
+    <Compile Include="formPersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPersonelEkle.Designer.cs">
+      <DependentUpon>formPersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPersonelListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPersonelListele.Designer.cs">
+      <DependentUpon>formPersonelListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSatis.Designer.cs">
+      <DependentUpon>formSatis.cs</DependentUpon>
+    </Compile>
     <Compile Include="formSozlesme.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formSozlesme.Designer.cs">
       <DependentUpon>formSozlesme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSozlesmeMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSozlesmeMusteri.Designer.cs">
+      <DependentUpon>formSozlesmeMusteri.cs</DependentUpon>
     </Compile>
     <Compile Include="messageBoxform.cs">
       <SubType>Form</SubType>
@@ -130,8 +154,20 @@
     <EmbeddedResource Include="formMusteriListeleme.resx">
       <DependentUpon>formMusteriListeleme.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formPersonelEkle.resx">
+      <DependentUpon>formPersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPersonelListele.resx">
+      <DependentUpon>formPersonelListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSatis.resx">
+      <DependentUpon>formSatis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formSozlesme.resx">
       <DependentUpon>formSozlesme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSozlesmeMusteri.resx">
+      <DependentUpon>formSozlesmeMusteri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="messageBoxform.resx">
       <DependentUpon>messageBoxform.cs</DependentUpon>

@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             this.label9 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboAraclar = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnguncelle = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -61,6 +59,9 @@
             this.txtucretAra = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtseriAra = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,15 +75,6 @@
             this.label9.Size = new System.Drawing.Size(96, 24);
             this.label9.TabIndex = 89;
             this.label9.Text = "RentaCar";
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(4, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 88;
             // 
             // button1
             // 
@@ -120,28 +112,20 @@
             this.comboAraclar.TabIndex = 84;
             this.comboAraclar.SelectedIndexChanged += new System.EventHandler(this.comboAraclar_SelectedIndexChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(378, 407);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(867, 313);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 83;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnguncelle
             // 
             this.btnguncelle.BackColor = System.Drawing.Color.White;
             this.btnguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnguncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguncelle.ImageIndex = 1;
-            this.btnguncelle.Location = new System.Drawing.Point(129, 505);
+            this.btnguncelle.Location = new System.Drawing.Point(191, 574);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(137, 129);
             this.btnguncelle.TabIndex = 81;
             this.btnguncelle.Text = "Rezervasyon";
             this.btnguncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnguncelle.UseVisualStyleBackColor = false;
+            this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
             // label8
             // 
@@ -380,12 +364,46 @@
             this.txtseriAra.TabIndex = 97;
             this.txtseriAra.TextChanged += new System.EventHandler(this.textseriAra_TextChanged);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.ImageIndex = 1;
+            this.button2.Location = new System.Drawing.Point(26, 574);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(137, 129);
+            this.button2.TabIndex = 99;
+            this.button2.Text = "Seçin";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(4, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(44, 49);
+            this.panel2.TabIndex = 88;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(378, 407);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(867, 313);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 83;
+            this.pictureBox1.TabStop = false;
+            // 
             // formMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(1257, 732);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.txtseriAra);
             this.Controls.Add(this.label13);
@@ -465,5 +483,6 @@
         private System.Windows.Forms.TextBox txtucretAra;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtseriAra;
+        private System.Windows.Forms.Button button2;
     }
 }

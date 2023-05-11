@@ -51,7 +51,6 @@ namespace Rent_Car_Proje_Veritabani
             string cumle = " delete from  musteri where tc= '" + satir.Cells["tc"].Value.ToString() + "' ";
             SqlCommand query2 = new SqlCommand();
             arackiralama.ekle_sil_guncelle(query2, cumle);
-            //foreach (Control item in Controls) if (item is TextBox) item.Text = "";
             YenileListele();
         }
 

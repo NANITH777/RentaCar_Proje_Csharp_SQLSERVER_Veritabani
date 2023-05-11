@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.txtextra = new System.Windows.Forms.TextBox();
-            this.btnteslim = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btntemizle = new System.Windows.Forms.Button();
@@ -62,8 +61,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txttcara = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.teltxt = new System.Windows.Forms.TextBox();
             this.eliyertxt = new System.Windows.Forms.TextBox();
             this.elitartxt = new System.Windows.Forms.TextBox();
@@ -76,9 +73,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -91,16 +89,6 @@
             this.txtextra.Name = "txtextra";
             this.txtextra.Size = new System.Drawing.Size(166, 22);
             this.txtextra.TabIndex = 47;
-            // 
-            // btnteslim
-            // 
-            this.btnteslim.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnteslim.Location = new System.Drawing.Point(676, 673);
-            this.btnteslim.Name = "btnteslim";
-            this.btnteslim.Size = new System.Drawing.Size(154, 53);
-            this.btnteslim.TabIndex = 48;
-            this.btnteslim.Text = "Arac Teslim";
-            this.btnteslim.UseVisualStyleBackColor = true;
             // 
             // label19
             // 
@@ -120,6 +108,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(878, 270);
             this.dataGridView1.TabIndex = 45;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // btntemizle
             // 
@@ -171,6 +161,7 @@
             this.btnguncelle.TabIndex = 41;
             this.btnguncelle.Text = "Guncelle";
             this.btnguncelle.UseVisualStyleBackColor = true;
+            this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
             // datecikis
             // 
@@ -385,7 +376,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 119);
+            this.label2.Location = new System.Drawing.Point(62, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 1;
@@ -394,7 +385,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 75);
+            this.label1.Location = new System.Drawing.Point(94, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 0;
@@ -402,8 +393,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txttcara);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.teltxt);
             this.groupBox1.Controls.Add(this.eliyertxt);
             this.groupBox1.Controls.Add(this.elitartxt);
@@ -423,61 +412,44 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MusterBilgileri";
             // 
-            // txttcara
-            // 
-            this.txttcara.Location = new System.Drawing.Point(113, 32);
-            this.txttcara.Name = "txttcara";
-            this.txttcara.Size = new System.Drawing.Size(166, 20);
-            this.txttcara.TabIndex = 13;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(50, 36);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 16);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "TC Ara";
-            // 
             // teltxt
             // 
-            this.teltxt.Location = new System.Drawing.Point(113, 163);
+            this.teltxt.Location = new System.Drawing.Point(123, 119);
             this.teltxt.Name = "teltxt";
             this.teltxt.Size = new System.Drawing.Size(166, 20);
             this.teltxt.TabIndex = 9;
             // 
             // eliyertxt
             // 
-            this.eliyertxt.Location = new System.Drawing.Point(113, 288);
+            this.eliyertxt.Location = new System.Drawing.Point(123, 244);
             this.eliyertxt.Name = "eliyertxt";
             this.eliyertxt.Size = new System.Drawing.Size(166, 20);
             this.eliyertxt.TabIndex = 11;
             // 
             // elitartxt
             // 
-            this.elitartxt.Location = new System.Drawing.Point(113, 251);
+            this.elitartxt.Location = new System.Drawing.Point(123, 207);
             this.elitartxt.Name = "elitartxt";
             this.elitartxt.Size = new System.Drawing.Size(166, 20);
             this.elitartxt.TabIndex = 10;
             // 
             // elinotxt
             // 
-            this.elinotxt.Location = new System.Drawing.Point(113, 204);
+            this.elinotxt.Location = new System.Drawing.Point(123, 160);
             this.elinotxt.Name = "elinotxt";
             this.elinotxt.Size = new System.Drawing.Size(166, 20);
             this.elinotxt.TabIndex = 8;
             // 
             // adtxt
             // 
-            this.adtxt.Location = new System.Drawing.Point(113, 119);
+            this.adtxt.Location = new System.Drawing.Point(123, 75);
             this.adtxt.Name = "adtxt";
             this.adtxt.Size = new System.Drawing.Size(166, 20);
             this.adtxt.TabIndex = 7;
             // 
             // tctxt
             // 
-            this.tctxt.Location = new System.Drawing.Point(113, 72);
+            this.tctxt.Location = new System.Drawing.Point(123, 28);
             this.tctxt.Name = "tctxt";
             this.tctxt.Size = new System.Drawing.Size(166, 20);
             this.tctxt.TabIndex = 6;
@@ -486,7 +458,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 295);
+            this.label6.Location = new System.Drawing.Point(38, 251);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 13);
             this.label6.TabIndex = 5;
@@ -495,7 +467,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 251);
+            this.label5.Location = new System.Drawing.Point(56, 207);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 4;
@@ -504,7 +476,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 207);
+            this.label4.Location = new System.Drawing.Point(66, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 3;
@@ -513,7 +485,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 163);
+            this.label3.Location = new System.Drawing.Point(72, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 2;
@@ -542,15 +514,6 @@
             this.label20.TabIndex = 50;
             this.label20.Text = "RentaCar";
             // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(4, 7);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 49;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -571,12 +534,34 @@
             this.label22.TabIndex = 53;
             this.label22.Text = "RentaCar";
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(4, 7);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(44, 49);
+            this.panel2.TabIndex = 49;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(701, 679);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 39);
+            this.button2.TabIndex = 44;
+            this.button2.Text = "Teslim";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // formSozlesme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.OrangeRed;
-            this.ClientSize = new System.Drawing.Size(1035, 761);
+            this.ClientSize = new System.Drawing.Size(1035, 724);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.button1);
@@ -586,7 +571,6 @@
             this.Controls.Add(this.btnekle);
             this.Controls.Add(this.btnguncelle);
             this.Controls.Add(this.txtextra);
-            this.Controls.Add(this.btnteslim);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
@@ -611,7 +595,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtextra;
-        private System.Windows.Forms.Button btnteslim;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btntemizle;
@@ -644,8 +627,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txttcara;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox teltxt;
         private System.Windows.Forms.TextBox eliyertxt;
         private System.Windows.Forms.TextBox elitartxt;
@@ -661,5 +642,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button button2;
     }
 }

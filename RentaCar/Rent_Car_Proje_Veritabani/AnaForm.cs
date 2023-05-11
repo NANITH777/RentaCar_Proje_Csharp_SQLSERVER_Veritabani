@@ -19,7 +19,9 @@ namespace Rent_Car_Proje_Veritabani
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            formPersonelListele perlis = new formPersonelListele();
+            perlis.ShowDialog();
+
         }
 
         private void exit_btn_Click(object sender, EventArgs e)
@@ -69,6 +71,18 @@ namespace Rent_Car_Proje_Veritabani
         {
             formSozlesme sozlesme = new formSozlesme();
             sozlesme.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            formSatis satis = new formSatis();
+            satis.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            formPersonelEkle personel = new formPersonelEkle();
+            personel.ShowDialog();
         }
     }
 }
