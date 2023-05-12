@@ -380,6 +380,7 @@
             this.Controls.Add(this.btnguncelle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formPersonelListele";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formPersonelListele";
             this.Load += new System.EventHandler(this.formPersonelListele_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -64,18 +64,20 @@ namespace Rent_Car_Proje_Veritabani
 
         private void btnguncelle_Click(object sender, EventArgs e)
         {
-            string cumle = "update personel set id=@id, ad=@ad, soyad=@soyad, tel=@tel,adres=@adres, mail=@mail, post=@post, maas=@maas where tc=@tc";
+            string cumle = "update personel set id=@id, ad=@ad, soyad=@soyad, tel=@tel, adres=@adres, mail=@mail, post=@post, maas=@maas where tc=@tc";
             SqlCommand query2 = new SqlCommand();
             query2.Parameters.AddWithValue("@tc", txtTc.Text);
             query2.Parameters.AddWithValue("@id", txtid.Text);
             query2.Parameters.AddWithValue("@ad", txtad.Text);
             query2.Parameters.AddWithValue("@soyad", txtsoyad.Text);
+            query2.Parameters.AddWithValue("@tel", txttel.Text);
             query2.Parameters.AddWithValue("@adres", txtadres.Text);
             query2.Parameters.AddWithValue("@mail", txtmail.Text);
             query2.Parameters.AddWithValue("@post", txtpost.Text);
             query2.Parameters.AddWithValue("@maas", float.Parse(txtmaas.Text));
             arackiralama.ekle_sil_guncelle(query2, cumle);
             foreach (Control item in Controls) if (item is TextBox) item.Text = "";
+            foreach (Control item in Controls) if (item is RichTextBox) item.Text = "";
             YenileListele();
         }
 

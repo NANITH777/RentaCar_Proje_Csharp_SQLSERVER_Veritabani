@@ -48,9 +48,9 @@ namespace Rent_Car_Proje_Veritabani
 
         private void YenileAraclistele()
         {
-            string cumle = "select * from arac";
+            string query = "select * from arac";
             SqlDataAdapter adtr2 = new SqlDataAdapter();
-            dataGridView1.DataSource= arackiralama.listele(adtr2, cumle);
+            dataGridView1.DataSource= arackiralama.listele(adtr2, query);
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -60,7 +60,7 @@ namespace Rent_Car_Proje_Veritabani
 
         private void btnguncelle_Click_1(object sender, EventArgs e)
         {
-            string cumle = " update arac set marka=@marka, seri=@seri, yil=@yil, renk=@renk, koltuksayisi=@koltuksayisi, yakit=@yakit, kiraucreti=@kiraucreti, resim=@resim, tarih=@tarih  where plaka=@plaka";
+            string query = " update arac set marka=@marka, seri=@seri, yil=@yil, renk=@renk, koltuksayisi=@koltuksayisi, yakit=@yakit, kiraucreti=@kiraucreti, resim=@resim, tarih=@tarih  where plaka=@plaka";
             SqlCommand com = new SqlCommand();
             com.Parameters.AddWithValue("@plaka", plakatxt.Text);
             com.Parameters.AddWithValue("@marka", markacombo.Text);
@@ -70,14 +70,15 @@ namespace Rent_Car_Proje_Veritabani
             com.Parameters.AddWithValue("@koltuksayisi", int.Parse(txtkoltuk.Text));
             com.Parameters.AddWithValue("@yakit", yakitcombo.Text);
             com.Parameters.AddWithValue("@kiraucreti", int.Parse(ucrettxt.Text));
-            com.Parameters.AddWithValue("@resim", pictureBox1.ImageLocation);
+            com.Parameters.AddWithValue("@resim", pictureBox2.ImageLocation);
             com.Parameters.AddWithValue("@tarih", DateTime.Now.ToString());
 
-            arackiralama.ekle_sil_guncelle(com, cumle);
+            arackiralama.ekle_sil_guncelle(com, query);
             sericombo.Items.Clear();
             foreach (Control item in Controls) if (item is TextBox) item.Text = "";
             foreach (Control item in Controls) if (item is ComboBox) item.Text = "";
             pictureBox1.ImageLocation = "";
+            pictureBox2.ImageLocation = "";
             YenileAraclistele();
         }
 
@@ -147,14 +148,14 @@ namespace Rent_Car_Proje_Veritabani
                 }
                 if (comboAraclar.SelectedIndex == 2)
                 {
-                    string query2 = " select * from arac where durumu= ' DOLU'";
-                    SqlDataAdapter adtr3 = new SqlDataAdapter();
-                    dataGridView1.DataSource = arackiralama.listele(adtr3, query2);
+                    string query = " select * from arac where durumu= 'DOLU'";
+                    SqlDataAdapter adtr2 = new SqlDataAdapter();
+                    dataGridView1.DataSource = arackiralama.listele(adtr2, query);
                 }
             }
             catch
             {
-                throw;
+                /*throw*/;
             }
         }
 

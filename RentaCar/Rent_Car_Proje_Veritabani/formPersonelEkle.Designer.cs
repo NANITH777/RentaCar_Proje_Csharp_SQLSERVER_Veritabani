@@ -325,6 +325,7 @@
             this.Controls.Add(this.txtTc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formPersonelEkle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formPersonelEkle";
             this.ResumeLayout(false);
             this.PerformLayout();
