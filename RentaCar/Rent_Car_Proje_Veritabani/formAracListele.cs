@@ -155,7 +155,7 @@ namespace Rent_Car_Proje_Veritabani
             }
             catch
             {
-                /*throw*/;
+                throw;
             }
         }
 
