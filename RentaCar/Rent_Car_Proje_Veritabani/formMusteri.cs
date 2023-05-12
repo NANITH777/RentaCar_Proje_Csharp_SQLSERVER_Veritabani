@@ -157,15 +157,10 @@ namespace Rent_Car_Proje_Veritabani
             dataGridView1.DataSource = arackiralama.listele(adtr5, cumle);
         }
 
-        private void btnguncelle_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-            formSozlesmeMusteri sozles = new formSozlesmeMusteri();
-            sozles.ShowDialog();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            formMusteriArabaListesi araba = new formMusteriArabaListesi();
+            araba.ShowDialog();
         }
     }
 }
