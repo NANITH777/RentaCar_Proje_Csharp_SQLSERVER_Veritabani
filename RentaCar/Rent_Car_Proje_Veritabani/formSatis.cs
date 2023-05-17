@@ -48,5 +48,17 @@ namespace Rent_Car_Proje_Veritabani
             YenileSatis();
            
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string query = "select * from EnCokKiralananA_Markasi";
+            SqlDataAdapter adtr3 = new SqlDataAdapter();
+            dataGridView1.DataSource = arac.listele(adtr3, query);
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            YenileSatis();
+        }
     }
 }

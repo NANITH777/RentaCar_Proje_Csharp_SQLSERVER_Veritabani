@@ -48,7 +48,7 @@ namespace Rent_Car_Proje_Veritabani
 
         private void YenileAraclistele()
         {
-            string query = "select * from arac";
+            string query = "select * from araclistele";
             SqlDataAdapter adtr2 = new SqlDataAdapter();
             dataGridView1.DataSource= arackiralama.listele(adtr2, query);
         }
@@ -172,7 +172,6 @@ namespace Rent_Car_Proje_Veritabani
             foreach (Control item in Controls) if (item is ComboBox) item.Text = "";
         }
 
-        
     }
     
 }

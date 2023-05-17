@@ -271,3 +271,56 @@ namespace Rent_Car_Proje_Veritabani
         }
     }
 }
+//if (int.Parse(txtextra.Text) >= 0 || int.Parse(txtextra.Text) < 0)
+//{
+//    DataGridViewRow satir = dataGridView1.CurrentRow;
+
+//    DateTime bugun = DateTime.Parse(DateTime.Now.ToShortDateString());
+//    int ucret = int.Parse(satir.Cells["kiraucret"].Value.ToString());
+//    int tutar = int.Parse(satir.Cells["tutar"].Value.ToString());
+//    DateTime cikis = DateTime.Parse(satir.Cells["ctarih"].Value.ToString());
+//    TimeSpan gun = bugun - cikis;
+//    int _gun = gun.Days;
+//    int toplamtutar = _gun * ucret;
+
+//    string sorgu1 = " delete from sozlesme where plaka= '" + satir.Cells["plaka"].Value.ToString() + "'";
+//    SqlCommand komut = new SqlCommand();
+//    arac.ekle_sil_guncelle(komut, sorgu1);
+//    string sorgu2 = " update arac set durum='BOS' where plaka='" + satir.Cells["plaka"].Value.ToString() + "'";
+//    SqlCommand komut2 = new SqlCommand();
+//    arac.ekle_sil_guncelle(komut2, sorgu2);
+
+//    string sorgu3 = "insert into satis(tc, adsoyad, plaka, marka, seri, yil, renk, gun, fiyat, tutar, tarih1, tarih2) values(@tc, @adsoyad, @plaka, @marka, @seri, @yil, @renk, @gun, @fiyat, @tutar, @tarih1, @tarih2)";
+//    SqlCommand komut3 = new SqlCommand();
+//    komut3.Parameters.AddWithValue("@tc", satir.Cells["tc"].Value.ToString());
+//    komut3.Parameters.AddWithValue("@adsoyad", satir.Cells["adsoyad"].Value.ToString());
+//    komut3.Parameters.AddWithValue("@plaka", satir.Cells["plaka"].Value.ToString());
+//    komut3.Parameters.AddWithValue("@marka", satir.Cells["marka"].Value.ToString());
+//    komut3.Parameters.AddWithValue("@seri", satir.Cells["seri"].Value.ToString());
+//    komut3.Parameters.AddWithValue("@yil", satir.Cells["yil"].Value.ToString());
+//    komut3.Parameters.AddWithValue("@renk", satir.Cells["renk"].Value.ToString());
+//    komut3.Parameters.AddWithValue("@gun", _gun);
+//    komut3.Parameters.AddWithValue("@fiyat", ucret);
+//    komut3.Parameters.AddWithValue("@tutar", toplamtutar);
+//    komut3.Parameters.AddWithValue("@tarih1", satir.Cells["ctarih"].Value.ToString());
+//    komut3.Parameters.AddWithValue("@tarih2", DateTime.Now.ToShortDateString());
+
+//    arac.ekle_sil_guncelle(komut3, sorgu3);
+//    MessageBox.Show("Arac teslim edildi");
+//    araccombo.Text = "";
+//    araccombo.Items.Clear();
+//    BOS_Araclar();
+//    Yenile();
+
+//    foreach (Control item in groupBox1.Controls) if (item is TextBox) item.Text = "";
+//    foreach (Control item in groupBox1.Controls) if (item is TextBox) item.Text = "";
+//    araccombo.Text = "";
+//    Temizle();
+
+//    txtextra.Text = "";
+//}
+//else
+//{
+//    MessageBox.Show("lutfen secim yapiniz", " uyari");
+//}
+//        }

@@ -84,5 +84,11 @@ namespace Rent_Car_Proje_Veritabani
             formPersonelEkle personel = new formPersonelEkle();
             personel.ShowDialog();
         }
+
+        private void btnsorgu_Click(object sender, EventArgs e)
+        {
+            formSorgular sorgu = new formSorgular();
+            sorgu.ShowDialog();
+        }
     }
 }

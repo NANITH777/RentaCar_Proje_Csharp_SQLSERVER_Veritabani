@@ -40,7 +40,7 @@ namespace Rent_Car_Proje_Veritabani
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string cumle = "select * from musteri where tc like '%" + textBox1.Text + "%'";
+            string cumle = "select * from Musteri_Listele where tc like '%" + textBox1.Text + "%'";
             SqlDataAdapter adtr2 = new SqlDataAdapter();
             dataGridView1.DataSource = arackiralama.listele(adtr2, cumle);
         }

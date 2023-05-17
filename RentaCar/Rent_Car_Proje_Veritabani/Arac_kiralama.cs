@@ -22,6 +22,16 @@ namespace Rent_Car_Proje_Veritabani
             connect.Close();
         }
 
+        public void Ekle_Sil_Guncelle2(SqlCommand komut, string query, CommandType komutTipi)
+        {
+            connect.Open();
+            komut.Connection = connect;
+            komut.CommandText = query;
+            komut.CommandType = komutTipi;
+            komut.ExecuteNonQuery();
+            connect.Close();
+        }
+
         public DataTable listele(SqlDataAdapter adtr, string query)
         {
             tablo = new DataTable();

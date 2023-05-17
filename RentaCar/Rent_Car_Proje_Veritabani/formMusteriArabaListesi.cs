@@ -26,13 +26,13 @@ namespace Rent_Car_Proje_Veritabani
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int clientId = int.Parse(textBox1.Text);
+            int musteriId = int.Parse(textBox1.Text);
 
             string connectionString = "Data Source=DESKTOP-BOU9IP8;Initial Catalog=RentaCar;Integrated Security=True";
 
             string query = "SELECT M.plaka, M.marka, M.seri, M.yil, M.renk, M.kiraucreti, M.gun, M.tutar, M.ctarih, M.dtarih FROM sozlesme M INNER JOIN arac A ON M.plaka = A.plaka WHERE M.tc = @ClientId";
             SqlCommand com = new SqlCommand(query);
-            com.Parameters.AddWithValue("@ClientId", clientId);
+            com.Parameters.AddWithValue("@ClientId", musteriId);
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

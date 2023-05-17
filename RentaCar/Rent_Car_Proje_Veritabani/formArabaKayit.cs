@@ -88,23 +88,27 @@ namespace Rent_Car_Proje_Veritabani
 
         private void btnkayit_Click(object sender, EventArgs e)
         {
-            string cumle = "insert into arac(plaka, marka, seri, yil, renk, koltuksayisi, yakit, kiraucreti, resim, tarih, durumu) " +
-                "values(@plaka, @marka, @seri, @yil, @renk, @koltuksayisi, @yakit, @kiraucreti, @resim, @tarih, @durumu)";
             SqlCommand com2 = new SqlCommand();
+            com2.CommandType = CommandType.StoredProcedure;
+            com2.CommandText = "Arac_Kayit";
+
             com2.Parameters.AddWithValue("@plaka", plakatxt.Text);
             com2.Parameters.AddWithValue("@marka", markacombo.Text);
             com2.Parameters.AddWithValue("@seri", sericombo.Text);
             com2.Parameters.AddWithValue("@yil", yiltxt.Text);
             com2.Parameters.AddWithValue("@renk", renktxt.Text);
+
+
             com2.Parameters.AddWithValue("@koltuksayisi", int.Parse(txtkoltuk.Text));
             com2.Parameters.AddWithValue("@yakit", yakitcombo.Text);
             com2.Parameters.AddWithValue("@kiraucreti", int.Parse(ucrettxt.Text));
             com2.Parameters.AddWithValue("@resim", pictureBox1.ImageLocation);
             com2.Parameters.AddWithValue("@tarih", DateTime.Now.ToString());
             com2.Parameters.AddWithValue("@durumu", "BOS");
-            arackiralama.ekle_sil_guncelle(com2, cumle);
-            messageBoxform.Show("Araba Eklendi!!!!!");
+            arackiralama.Ekle_Sil_Guncelle2(com2, "Arac_Kayit", CommandType.StoredProcedure);
+
             sericombo.Items.Clear();
+
             foreach (Control item in Controls) if (item is TextBox) item.Text = "";
             foreach (Control item in Controls) if (item is ComboBox) item.Text = "";
             pictureBox1.ImageLocation = "";

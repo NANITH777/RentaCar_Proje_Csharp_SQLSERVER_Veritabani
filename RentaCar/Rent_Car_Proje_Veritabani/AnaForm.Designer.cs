@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.exit_btn = new System.Windows.Forms.Button();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -46,10 +46,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnsorgu = new System.Windows.Forms.Button();
             this.minimize_btn = new System.Windows.Forms.Button();
             this.tasker_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,19 +65,19 @@
             this.panel1.Size = new System.Drawing.Size(133, 444);
             this.panel1.TabIndex = 0;
             // 
-            // button3
+            // button8
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.button3.Location = new System.Drawing.Point(10, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 89);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Arac Ekle";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.OrangeRed;
+            this.button8.Location = new System.Drawing.Point(8, 118);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(118, 89);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Personel Listeleme";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button1
             // 
@@ -105,6 +107,34 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.OrangeRed;
+            this.button7.Location = new System.Drawing.Point(8, 4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(118, 89);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Personel Ekle";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.OrangeRed;
+            this.button3.Location = new System.Drawing.Point(10, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(118, 89);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Arac Ekle";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
@@ -130,20 +160,6 @@
             this.panel2.Size = new System.Drawing.Size(133, 444);
             this.panel2.TabIndex = 1;
             // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.White;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.OrangeRed;
-            this.button8.Location = new System.Drawing.Point(8, 118);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(118, 89);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Personel Listeleme";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
@@ -157,20 +173,6 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.OrangeRed;
-            this.button7.Location = new System.Drawing.Point(8, 4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(118, 89);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Personel Ekle";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -247,10 +249,25 @@
             // 
             this.panel3.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.Nissan_Rogue1;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Controls.Add(this.btnsorgu);
             this.panel3.Location = new System.Drawing.Point(151, 47);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(308, 426);
             this.panel3.TabIndex = 8;
+            // 
+            // btnsorgu
+            // 
+            this.btnsorgu.BackColor = System.Drawing.Color.White;
+            this.btnsorgu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsorgu.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnsorgu.Location = new System.Drawing.Point(89, 371);
+            this.btnsorgu.Name = "btnsorgu";
+            this.btnsorgu.Size = new System.Drawing.Size(140, 52);
+            this.btnsorgu.TabIndex = 0;
+            this.btnsorgu.Text = "Sorgular";
+            this.btnsorgu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnsorgu.UseVisualStyleBackColor = false;
+            this.btnsorgu.Click += new System.EventHandler(this.btnsorgu_Click);
             // 
             // minimize_btn
             // 
@@ -312,6 +329,7 @@
             this.Text = "Menu";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,5 +355,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnsorgu;
     }
 }

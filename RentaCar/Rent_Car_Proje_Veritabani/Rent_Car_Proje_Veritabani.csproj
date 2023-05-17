@@ -113,6 +113,12 @@
     <Compile Include="formSatis.Designer.cs">
       <DependentUpon>formSatis.cs</DependentUpon>
     </Compile>
+    <Compile Include="formSorgular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSorgular.Designer.cs">
+      <DependentUpon>formSorgular.cs</DependentUpon>
+    </Compile>
     <Compile Include="formSozlesme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formSatis.resx">
       <DependentUpon>formSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSorgular.resx">
+      <DependentUpon>formSorgular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formSozlesme.resx">
       <DependentUpon>formSozlesme.cs</DependentUpon>
