@@ -31,7 +31,7 @@ namespace Rent_Car_Proje_Veritabani
 
         private void YenileListele()
         {
-            string cumle = " select * from personel";
+            string cumle = " select * from personel order by id";
             SqlDataAdapter adtr2 = new SqlDataAdapter();
             dataGridView1.DataSource = arackiralama.listele(adtr2, cumle);
             dataGridView1.Columns[0].HeaderText = "TC";

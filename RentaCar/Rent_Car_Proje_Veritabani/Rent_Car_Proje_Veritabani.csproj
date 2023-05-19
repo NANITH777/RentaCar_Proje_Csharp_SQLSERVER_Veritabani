@@ -260,5 +260,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-logout-58.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rentacar_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
