@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMusteri));
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -58,10 +60,13 @@
             this.txtucretAra = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtseriAra = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +75,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(54, 23);
+            this.label9.Location = new System.Drawing.Point(62, 26);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 24);
             this.label9.TabIndex = 89;
@@ -349,27 +354,11 @@
             this.txtseriAra.TabIndex = 97;
             this.txtseriAra.TextChanged += new System.EventHandler(this.textseriAra_TextChanged);
             // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(4, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 88;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(27, 407);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(334, 313);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 83;
-            this.pictureBox1.TabStop = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.ImageIndex = 1;
+            this.button2.ImageList = this.ımageList1;
             this.button2.Location = new System.Drawing.Point(796, 645);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 75);
@@ -387,12 +376,62 @@
             this.label15.TabIndex = 100;
             this.label15.Text = "Kıradıklarınız araba listesine gidin";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.ImageIndex = 0;
+            this.button3.ImageList = this.ımageList1;
+            this.button3.Location = new System.Drawing.Point(531, 645);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(110, 75);
+            this.button3.TabIndex = 101;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(27, 407);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(334, 313);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 83;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(547, 617);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(67, 16);
+            this.label16.TabIndex = 102;
+            this.label16.Text = "Sözleşme";
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(44, 49);
+            this.panel2.TabIndex = 103;
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "sozlesme.png");
+            this.ımageList1.Images.SetKeyName(1, "listcar.png");
+            // 
             // formMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(1257, 732);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label14);
@@ -405,7 +444,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtmarkaAra);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboAraclar);
@@ -441,7 +479,6 @@
         #endregion
 
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboAraclar;
@@ -474,5 +511,9 @@
         private System.Windows.Forms.TextBox txtseriAra;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

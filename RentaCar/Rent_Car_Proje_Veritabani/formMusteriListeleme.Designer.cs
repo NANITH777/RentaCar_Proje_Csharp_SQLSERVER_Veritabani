@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMusteriListeleme));
             this.label6 = new System.Windows.Forms.Label();
             this.txtsifre = new System.Windows.Forms.TextBox();
             this.datedogum = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.btnekle = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,11 +49,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,10 +96,11 @@
             // btnekle
             // 
             this.btnekle.BackColor = System.Drawing.Color.White;
-            this.btnekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnekle.ForeColor = System.Drawing.Color.OrangeRed;
             this.btnekle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnekle.ImageIndex = 1;
+            this.btnekle.ImageIndex = 0;
+            this.btnekle.ImageList = this.ımageList1;
             this.btnekle.Location = new System.Drawing.Point(165, 473);
             this.btnekle.Name = "btnekle";
             this.btnekle.Size = new System.Drawing.Size(121, 73);
@@ -105,6 +109,13 @@
             this.btnekle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnekle.UseVisualStyleBackColor = false;
             this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "update_icon.png");
+            this.ımageList1.Images.SetKeyName(1, "sil_icon.png");
             // 
             // label5
             // 
@@ -226,15 +237,6 @@
             this.label9.TabIndex = 52;
             this.label9.Text = "RentaCar";
             // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 51;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -257,13 +259,14 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.OrangeRed;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.ImageIndex = 0;
-            this.button1.Location = new System.Drawing.Point(994, 79);
+            this.button1.ImageIndex = 1;
+            this.button1.ImageList = this.ımageList1;
+            this.button1.Location = new System.Drawing.Point(1008, 69);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 48);
+            this.button1.Size = new System.Drawing.Size(80, 58);
             this.button1.TabIndex = 55;
             this.button1.Text = "Sil";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -283,18 +286,27 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(18, 13);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(44, 49);
+            this.panel1.TabIndex = 57;
+            // 
             // formMusteriListeleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(1099, 555);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label6);
@@ -343,10 +355,11 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMusteriEkle));
-            this.btnekle = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,26 +47,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtsifre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnekle = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // btnekle
+            // ımageList1
             // 
-            this.btnekle.BackColor = System.Drawing.Color.White;
-            this.btnekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnekle.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnekle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnekle.ImageIndex = 0;
-            this.btnekle.ImageList = this.ımageList1;
-            this.btnekle.Location = new System.Drawing.Point(173, 430);
-            this.btnekle.Name = "btnekle";
-            this.btnekle.Size = new System.Drawing.Size(114, 73);
-            this.btnekle.TabIndex = 23;
-            this.btnekle.Text = "Ekle";
-            this.btnekle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnekle.UseVisualStyleBackColor = false;
-            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "add-pers.png");
+            this.ımageList1.Images.SetKeyName(1, "cancel-button.png");
             // 
             // label5
             // 
@@ -211,27 +201,37 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(55, 14);
+            this.label9.Location = new System.Drawing.Point(62, 14);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 24);
             this.label9.TabIndex = 54;
             this.label9.Text = "RentaCar";
             // 
-            // panel2
+            // btnekle
             // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(5, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 53;
+            this.btnekle.BackColor = System.Drawing.Color.White;
+            this.btnekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnekle.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnekle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnekle.ImageIndex = 0;
+            this.btnekle.ImageList = this.ımageList1;
+            this.btnekle.Location = new System.Drawing.Point(173, 430);
+            this.btnekle.Name = "btnekle";
+            this.btnekle.Size = new System.Drawing.Size(114, 73);
+            this.btnekle.TabIndex = 23;
+            this.btnekle.Text = "Ekle";
+            this.btnekle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnekle.UseVisualStyleBackColor = false;
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
-            // ımageList1
+            // panel1
             // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "add-pers.png");
-            this.ımageList1.Images.SetKeyName(1, "cancel-button.png");
+            this.panel1.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(12, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(44, 49);
+            this.panel1.TabIndex = 55;
             // 
             // formMusteriEkle
             // 
@@ -239,8 +239,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(342, 515);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtsifre);
             this.Controls.Add(this.button1);
@@ -284,7 +284,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtsifre;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

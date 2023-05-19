@@ -22,3 +22,5 @@ C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar
 C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.formPersonelListele.resources
 C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.formMusteriArabaListesi.resources
 C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.formSorgular.resources
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.formMusteriSozlesme.resources
+C:\Users\NANITH\Documents\GitHub\RebtaCar_Proje_C-_SQLSERVER_Veritabani\RentaCar\Rent_Car_Proje_Veritabani\obj\Debug\Rent_Car_Proje_Veritabani.messageBoxform2.resources

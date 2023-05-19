@@ -54,12 +54,9 @@
             // 
             this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
             this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "adminicon.jpeg");
-            this.ımageList1.Images.SetKeyName(1, "admin_icon.jpeg");
-            this.ımageList1.Images.SetKeyName(2, "client_icon.jpeg");
-            this.ımageList1.Images.SetKeyName(3, "admincon2.jpeg");
-            this.ımageList1.Images.SetKeyName(4, "admincon.jpeg");
-            this.ımageList1.Images.SetKeyName(5, "adcon1.jpeg");
+            this.ımageList1.Images.SetKeyName(0, "rentacar_icon.png");
+            this.ımageList1.Images.SetKeyName(1, "car_icon.png");
+            this.ımageList1.Images.SetKeyName(2, "login_icon.png");
             // 
             // panel1
             // 
@@ -158,11 +155,14 @@
             this.btnlogin.BackColor = System.Drawing.Color.White;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnlogin.Location = new System.Drawing.Point(350, 324);
+            this.btnlogin.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnlogin.ImageIndex = 2;
+            this.btnlogin.ImageList = this.ımageList1;
+            this.btnlogin.Location = new System.Drawing.Point(350, 296);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(82, 46);
+            this.btnlogin.Size = new System.Drawing.Size(82, 74);
             this.btnlogin.TabIndex = 19;
-            this.btnlogin.Text = "Login";
+            this.btnlogin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
@@ -227,7 +227,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
+            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";

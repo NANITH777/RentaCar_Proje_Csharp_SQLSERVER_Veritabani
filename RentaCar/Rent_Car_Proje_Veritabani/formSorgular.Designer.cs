@@ -36,10 +36,10 @@
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,15 +136,6 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "RentaCar";
             // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(2, 8);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 15;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -179,18 +170,27 @@
             this.linkLabel7.Text = "En çok kiralanan\r\naraba markası";
             this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(12, 8);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(44, 49);
+            this.panel2.TabIndex = 21;
+            // 
             // formSorgular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(979, 545);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.linkLabel7);
             this.Controls.Add(this.linkLabel6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
@@ -218,9 +218,9 @@
         private System.Windows.Forms.LinkLabel linkLabel5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.LinkLabel linkLabel7;
+        private System.Windows.Forms.Panel panel2;
     }
 }

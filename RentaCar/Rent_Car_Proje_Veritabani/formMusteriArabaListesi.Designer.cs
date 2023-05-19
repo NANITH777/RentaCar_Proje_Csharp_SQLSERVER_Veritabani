@@ -28,25 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMusteriArabaListesi));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 217);
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.ImageIndex = 0;
+            this.button1.ImageList = this.ımageList1;
+            this.button1.Location = new System.Drawing.Point(12, 203);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 143);
+            this.button1.Size = new System.Drawing.Size(163, 111);
             this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
@@ -98,15 +103,6 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "RentaCar";
             // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(7, 8);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 15;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -117,16 +113,31 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Bizi seçtiğiniz için Teşekkür ederiz";
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(12, 8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(44, 49);
+            this.panel1.TabIndex = 19;
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "smile.png");
+            // 
             // formMusteriArabaListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(696, 376);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -149,7 +160,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ImageList ımageList1;
     }
 }

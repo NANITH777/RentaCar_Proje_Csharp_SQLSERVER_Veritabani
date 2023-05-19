@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPersonelEkle));
             this.label9 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,26 +54,18 @@
             this.txtmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtpost = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(54, 14);
+            this.label9.Location = new System.Drawing.Point(54, 19);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 24);
             this.label9.TabIndex = 72;
             this.label9.Text = "RentaCar";
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(4, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 71;
             // 
             // label6
             // 
@@ -293,12 +284,22 @@
             this.txtpost.Size = new System.Drawing.Size(201, 26);
             this.txtpost.TabIndex = 85;
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(4, 8);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(44, 49);
+            this.panel2.TabIndex = 87;
+            // 
             // formPersonelEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(660, 484);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtpost);
             this.Controls.Add(this.label10);
@@ -310,7 +311,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtsoyad);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.button1);
@@ -335,7 +335,6 @@
         #endregion
 
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Button button1;
@@ -359,5 +358,6 @@
         private System.Windows.Forms.TextBox txtmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtpost;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -33,6 +33,7 @@
             this.btnok = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +73,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -89,6 +91,15 @@
             this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "RentaCar";
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(3, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(44, 30);
+            this.panel3.TabIndex = 1;
             // 
             // messageBoxform
             // 
@@ -123,5 +134,6 @@
         private System.Windows.Forms.Button btnok;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel3;
     }
 }

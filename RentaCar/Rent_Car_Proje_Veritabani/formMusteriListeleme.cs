@@ -50,10 +50,10 @@ namespace Rent_Car_Proje_Veritabani
             DataGridViewRow satir = dataGridView1.CurrentRow;
             string cumle = " delete from  musteri where tc= '" + satir.Cells["tc"].Value.ToString() + "' ";
             SqlCommand query2 = new SqlCommand();
-            arackiralama.ekle_sil_guncelle(query2, cumle);
+            arackiralama.ekle_sil_guncelle(query2, cumle); 
             YenileListele();
         }
-
+   
         private void btnekle_Click(object sender, EventArgs e)
         {
             string cumle = "update musteri set sifre=@sifre, adsoyad=@adsoyad,telefon=@telefon,adres=@adres,email=@email where tc=@tc";

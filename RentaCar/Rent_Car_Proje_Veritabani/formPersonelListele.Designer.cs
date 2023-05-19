@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPersonelListele));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnguncelle = new System.Windows.Forms.Button();
@@ -57,6 +58,8 @@
             this.txtmaas = new System.Windows.Forms.TextBox();
             this.txtad = new System.Windows.Forms.TextBox();
             this.txtTc = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,10 +79,11 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.OrangeRed;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.ImageIndex = 0;
+            this.button1.ImageList = this.ımageList1;
             this.button1.Location = new System.Drawing.Point(940, 482);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 74);
@@ -112,20 +116,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(55, 15);
+            this.label9.Location = new System.Drawing.Point(55, 12);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 24);
             this.label9.TabIndex = 75;
             this.label9.Text = "RentaCar";
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(5, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 74;
             // 
             // label8
             // 
@@ -150,10 +145,11 @@
             // btnguncelle
             // 
             this.btnguncelle.BackColor = System.Drawing.Color.White;
-            this.btnguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnguncelle.ForeColor = System.Drawing.Color.OrangeRed;
             this.btnguncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnguncelle.ImageIndex = 1;
+            this.btnguncelle.ImageList = this.ımageList1;
             this.btnguncelle.Location = new System.Drawing.Point(388, 482);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(121, 73);
@@ -343,12 +339,29 @@
             this.txtTc.Size = new System.Drawing.Size(201, 26);
             this.txtTc.TabIndex = 87;
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(5, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(44, 49);
+            this.panel2.TabIndex = 107;
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "sil_icon.png");
+            this.ımageList1.Images.SetKeyName(1, "update_icon.png");
+            // 
             // formPersonelListele
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(1047, 571);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtpost);
             this.Controls.Add(this.label1);
@@ -374,7 +387,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnguncelle);
@@ -396,7 +408,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnguncelle;
@@ -420,5 +431,7 @@
         private System.Windows.Forms.TextBox txtmaas;
         private System.Windows.Forms.TextBox txtad;
         private System.Windows.Forms.TextBox txtTc;
+        private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

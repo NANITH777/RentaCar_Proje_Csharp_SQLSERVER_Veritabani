@@ -162,5 +162,11 @@ namespace Rent_Car_Proje_Veritabani
             formMusteriArabaListesi araba = new formMusteriArabaListesi();
             araba.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formMusteriSozlesme mus_sozlesme = new formMusteriSozlesme();
+            mus_sozlesme.ShowDialog();
+        }
     }
 }

@@ -68,7 +68,7 @@ namespace Rent_Car_Proje_Veritabani
                         SqlDataReader reader = com2.ExecuteReader();
                         if (reader.Read())
                         {
-                            messageBoxform.Show("Giris basarili!!!");
+                            messageBoxform2.Show("Giris basarili!!!");
                             formMusteri musteri = new formMusteri();
                             musteri.Show();
                             this.Hide();

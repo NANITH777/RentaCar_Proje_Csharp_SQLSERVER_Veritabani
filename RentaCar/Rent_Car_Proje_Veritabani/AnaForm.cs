@@ -26,7 +26,7 @@ namespace Rent_Car_Proje_Veritabani
 
         private void exit_btn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void minimize_btn_Click(object sender, EventArgs e)

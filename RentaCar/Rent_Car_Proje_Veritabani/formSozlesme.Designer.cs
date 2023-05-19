@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formSozlesme));
             this.txtextra = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -75,8 +77,9 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -113,35 +116,50 @@
             // 
             // btntemizle
             // 
-            this.btntemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntemizle.BackColor = System.Drawing.Color.White;
+            this.btntemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntemizle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btntemizle.ImageIndex = 0;
+            this.btntemizle.ImageList = this.ımageList1;
             this.btntemizle.Location = new System.Drawing.Point(938, 82);
             this.btntemizle.Name = "btntemizle";
-            this.btntemizle.Size = new System.Drawing.Size(87, 55);
+            this.btntemizle.Size = new System.Drawing.Size(87, 69);
             this.btntemizle.TabIndex = 43;
             this.btntemizle.Text = "Temizle";
-            this.btntemizle.UseVisualStyleBackColor = true;
+            this.btntemizle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btntemizle.UseVisualStyleBackColor = false;
             this.btntemizle.Click += new System.EventHandler(this.btntemizle_Click);
             // 
             // btnhesapla
             // 
-            this.btnhesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhesapla.Location = new System.Drawing.Point(90, 234);
+            this.btnhesapla.BackColor = System.Drawing.Color.White;
+            this.btnhesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhesapla.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnhesapla.ImageIndex = 1;
+            this.btnhesapla.ImageList = this.ımageList1;
+            this.btnhesapla.Location = new System.Drawing.Point(115, 239);
             this.btnhesapla.Name = "btnhesapla";
-            this.btnhesapla.Size = new System.Drawing.Size(111, 74);
+            this.btnhesapla.Size = new System.Drawing.Size(77, 74);
             this.btnhesapla.TabIndex = 43;
             this.btnhesapla.Text = "Hesapla";
-            this.btnhesapla.UseVisualStyleBackColor = true;
+            this.btnhesapla.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnhesapla.UseVisualStyleBackColor = false;
             this.btnhesapla.Click += new System.EventHandler(this.btnhesapla_Click);
             // 
             // btnekle
             // 
-            this.btnekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnekle.BackColor = System.Drawing.Color.White;
+            this.btnekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnekle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnekle.ImageIndex = 4;
+            this.btnekle.ImageList = this.ımageList1;
             this.btnekle.Location = new System.Drawing.Point(938, 187);
             this.btnekle.Name = "btnekle";
-            this.btnekle.Size = new System.Drawing.Size(85, 58);
+            this.btnekle.Size = new System.Drawing.Size(85, 71);
             this.btnekle.TabIndex = 40;
             this.btnekle.Text = "Ekleme";
-            this.btnekle.UseVisualStyleBackColor = true;
+            this.btnekle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnekle.UseVisualStyleBackColor = false;
             this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
             // datedonus
@@ -154,13 +172,18 @@
             // 
             // btnguncelle
             // 
-            this.btnguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguncelle.BackColor = System.Drawing.Color.White;
+            this.btnguncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguncelle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnguncelle.ImageIndex = 5;
+            this.btnguncelle.ImageList = this.ımageList1;
             this.btnguncelle.Location = new System.Drawing.Point(940, 319);
             this.btnguncelle.Name = "btnguncelle";
-            this.btnguncelle.Size = new System.Drawing.Size(85, 55);
+            this.btnguncelle.Size = new System.Drawing.Size(85, 67);
             this.btnguncelle.TabIndex = 41;
             this.btnguncelle.Text = "Guncelle";
-            this.btnguncelle.UseVisualStyleBackColor = true;
+            this.btnguncelle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnguncelle.UseVisualStyleBackColor = false;
             this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
             // datecikis
@@ -534,25 +557,41 @@
             this.label22.TabIndex = 53;
             this.label22.Text = "RentaCar";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.ImageIndex = 2;
+            this.button2.ImageList = this.ımageList1;
+            this.button2.Location = new System.Drawing.Point(928, 628);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(87, 80);
+            this.button2.TabIndex = 44;
+            this.button2.Text = "Teslim";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
+            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(4, 7);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 49;
+            this.panel2.TabIndex = 54;
             // 
-            // button2
+            // ımageList1
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(701, 679);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 39);
-            this.button2.TabIndex = 44;
-            this.button2.Text = "Teslim";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "clear.png");
+            this.ımageList1.Images.SetKeyName(1, "hesapla.png");
+            this.ımageList1.Images.SetKeyName(2, "livraison.png");
+            this.ımageList1.Images.SetKeyName(3, "sil_icon.png");
+            this.ımageList1.Images.SetKeyName(4, "add_icon1.png");
+            this.ımageList1.Images.SetKeyName(5, "update2_icon.png");
             // 
             // formSozlesme
             // 
@@ -561,12 +600,12 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(1035, 724);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.btntemizle);
             this.Controls.Add(this.btnekle);
             this.Controls.Add(this.btnguncelle);
@@ -639,9 +678,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ImageList ımageList1;
     }
 }

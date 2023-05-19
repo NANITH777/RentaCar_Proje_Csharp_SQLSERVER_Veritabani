@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formArabaKayit));
             this.btnkayit = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnresim = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,9 +53,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,25 +63,37 @@
             this.btnkayit.BackColor = System.Drawing.Color.White;
             this.btnkayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnkayit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnkayit.ImageIndex = 1;
-            this.btnkayit.Location = new System.Drawing.Point(160, 518);
+            this.btnkayit.ImageIndex = 0;
+            this.btnkayit.ImageList = this.ımageList1;
+            this.btnkayit.Location = new System.Drawing.Point(164, 507);
             this.btnkayit.Name = "btnkayit";
-            this.btnkayit.Size = new System.Drawing.Size(97, 56);
+            this.btnkayit.Size = new System.Drawing.Size(97, 67);
             this.btnkayit.TabIndex = 38;
             this.btnkayit.Text = "Kayit";
             this.btnkayit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnkayit.UseVisualStyleBackColor = false;
             this.btnkayit.Click += new System.EventHandler(this.btnkayit_Click);
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "add_car.png");
+            this.ımageList1.Images.SetKeyName(1, "add_image.png");
+            // 
             // btnresim
             // 
             this.btnresim.BackColor = System.Drawing.Color.White;
             this.btnresim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnresim.Location = new System.Drawing.Point(529, 539);
+            this.btnresim.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnresim.ImageIndex = 1;
+            this.btnresim.ImageList = this.ımageList1;
+            this.btnresim.Location = new System.Drawing.Point(533, 507);
             this.btnresim.Name = "btnresim";
-            this.btnresim.Size = new System.Drawing.Size(115, 35);
+            this.btnresim.Size = new System.Drawing.Size(115, 67);
             this.btnresim.TabIndex = 37;
-            this.btnresim.Text = "Resim Ekle";
+            this.btnresim.Text = "Resim \r\nEkle";
+            this.btnresim.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnresim.UseVisualStyleBackColor = false;
             this.btnresim.Click += new System.EventHandler(this.btnresim_Click);
             // 
@@ -272,15 +285,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.RentaCar;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(14, 22);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(44, 49);
-            this.panel2.TabIndex = 56;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(330, 163);
@@ -290,11 +294,14 @@
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
             // 
-            // ımageList1
+            // panel2
             // 
-            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.ımageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(14, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(44, 49);
+            this.panel2.TabIndex = 59;
             // 
             // formArabaKayit
             // 
@@ -302,9 +309,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
             this.ClientSize = new System.Drawing.Size(912, 586);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnkayit);
@@ -356,12 +363,12 @@
         private System.Windows.Forms.ComboBox markacombo;
         private System.Windows.Forms.TextBox plakatxt;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtkoltuk;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
