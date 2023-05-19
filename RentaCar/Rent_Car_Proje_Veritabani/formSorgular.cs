@@ -32,7 +32,7 @@ namespace Rent_Car_Proje_Veritabani
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string query = "select * from personel";
+            string query = "select * from personel order by id";
             SqlDataAdapter adtr1 = new SqlDataAdapter();
             dataGridView1.DataSource = arackiralama.listele(adtr1, query);
         }

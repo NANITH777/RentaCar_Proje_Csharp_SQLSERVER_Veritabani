@@ -81,7 +81,7 @@ namespace Rent_Car_Proje_Veritabani
                         connect.Close();
                     }
                 }
-                else //IF the user has not choose a role it will show error MessageBox
+                else 
                 {
                     MessageBox.Show("Lutfen Rolunuzu secin", "Yanlis Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }

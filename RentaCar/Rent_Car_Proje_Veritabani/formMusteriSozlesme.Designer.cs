@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.btntemizle = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnekle = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.datedonus = new System.Windows.Forms.DateTimePicker();
@@ -73,7 +74,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -136,6 +136,14 @@
             this.btntemizle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btntemizle.UseVisualStyleBackColor = false;
             this.btntemizle.Click += new System.EventHandler(this.btntemizle_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "add_icon1.png");
+            this.ımageList1.Images.SetKeyName(1, "clear.png");
+            this.ımageList1.Images.SetKeyName(2, "hesapla.png");
             // 
             // btnekle
             // 
@@ -503,14 +511,6 @@
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "TC";
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "add_icon1.png");
-            this.ımageList1.Images.SetKeyName(1, "clear.png");
-            this.ımageList1.Images.SetKeyName(2, "hesapla.png");
             // 
             // panel1
             // 

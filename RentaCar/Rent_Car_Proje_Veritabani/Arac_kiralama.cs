@@ -52,7 +52,7 @@ namespace Rent_Car_Proje_Veritabani
             }
             connect.Close();
         }
-        public void TC_Ara(TextBox tc, /*TextBox sifre,*/ TextBox adsoyad, TextBox telefon, string query)
+        public void TC_Ara(TextBox tc, TextBox adsoyad, TextBox telefon, string query)
         {
             connect.Open();
             SqlCommand com = new SqlCommand(query, connect);
@@ -60,7 +60,6 @@ namespace Rent_Car_Proje_Veritabani
             while (read.Read())
             {
                 tc.Text = read["tc"].ToString();
-                //sifre.Text = read["sifre"].ToString();
                 adsoyad.Text = read["adsoyad"].ToString();
                 telefon.Text = read["telefon"].ToString();
             }

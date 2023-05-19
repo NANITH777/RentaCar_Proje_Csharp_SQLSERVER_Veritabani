@@ -205,7 +205,7 @@ namespace Rent_Car_Proje_Veritabani
             int _gunfarki = gunfarki.Days;
             int ucretfarki;
 
-            // ucret farkli hesapla
+            // Ucret farkli hesapla
             ucretfarki = _gunfarki * ucret;
             txtextra.Text = ucretfarki.ToString();
         }
