@@ -26,7 +26,7 @@ namespace Rent_Car_Proje_Veritabani
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int musteriId = int.Parse(textBox1.Text);
+           var musteriId = textBox1.Text;
 
             string connect = "Data Source=DESKTOP-BOU9IP8;Initial Catalog=RentaCar;Integrated Security=True";
 

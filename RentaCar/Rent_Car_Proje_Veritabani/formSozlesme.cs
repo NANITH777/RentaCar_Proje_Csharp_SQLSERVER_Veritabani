@@ -119,9 +119,10 @@ namespace Rent_Car_Proje_Veritabani
             com2.Parameters.AddWithValue("@dtarih", datedonus.Text);
             arackiralama.ekle_sil_guncelle(com2, query2);
 
-            string query3 = "update arac set durumu='DOLU' where plaka= '" + araccombo.Text + "' ";
-            SqlCommand com3 = new SqlCommand();
-            arackiralama.ekle_sil_guncelle(com3, query3);
+            // Sql server'de bir Trigger kullandım bunun yerine
+            //string query3 = "update arac set durumu='DOLU' where plaka= '" + araccombo.Text + "' ";
+            //SqlCommand com3 = new SqlCommand();
+            //arackiralama.ekle_sil_guncelle(com3, query3);
             araccombo.Items.Clear();
             BOS_Araclar();
             Yenile();

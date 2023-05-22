@@ -30,24 +30,27 @@
         {
             this.lbltext = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnok = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbltext
             // 
-            this.lbltext.AutoSize = true;
+            this.lbltext.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltext.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltext.ForeColor = System.Drawing.Color.Black;
-            this.lbltext.Location = new System.Drawing.Point(55, 27);
+            this.lbltext.Location = new System.Drawing.Point(29, 5);
             this.lbltext.Name = "lbltext";
-            this.lbltext.Size = new System.Drawing.Size(40, 15);
+            this.lbltext.Size = new System.Drawing.Size(417, 69);
             this.lbltext.TabIndex = 0;
             this.lbltext.Text = "[TEXT]";
+            this.lbltext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -56,8 +59,17 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(316, 34);
+            this.panel2.Size = new System.Drawing.Size(577, 34);
             this.panel2.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(44, 31);
+            this.panel3.TabIndex = 1;
             // 
             // label1
             // 
@@ -76,7 +88,7 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(33, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 91);
+            this.panel1.Size = new System.Drawing.Size(498, 91);
             this.panel1.TabIndex = 6;
             // 
             // btnok
@@ -84,7 +96,7 @@
             this.btnok.BackColor = System.Drawing.Color.White;
             this.btnok.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnok.ForeColor = System.Drawing.Color.Black;
-            this.btnok.Location = new System.Drawing.Point(113, 129);
+            this.btnok.Location = new System.Drawing.Point(243, 129);
             this.btnok.Name = "btnok";
             this.btnok.Size = new System.Drawing.Size(60, 40);
             this.btnok.TabIndex = 5;
@@ -92,21 +104,12 @@
             this.btnok.UseVisualStyleBackColor = false;
             this.btnok.Click += new System.EventHandler(this.btnok_Click);
             // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = global::Rent_Car_Proje_Veritabani.Properties.Resources.car_icon;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(44, 31);
-            this.panel3.TabIndex = 1;
-            // 
             // messageBoxform2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(316, 174);
+            this.ClientSize = new System.Drawing.Size(577, 174);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnok);
@@ -117,7 +120,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
