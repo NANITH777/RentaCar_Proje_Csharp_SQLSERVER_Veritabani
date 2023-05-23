@@ -66,7 +66,6 @@ namespace Rent_Car_Proje_Veritabani
             string query2 = "truncate table satis";
             SqlDataAdapter adtr4 = new SqlDataAdapter();
             dataGridView1.DataSource = arac.listele(adtr4, query2);
-            //label1.Text = "0";
         }
     }
 }
