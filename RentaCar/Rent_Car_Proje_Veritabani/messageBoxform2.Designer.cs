@@ -45,9 +45,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltext.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltext.ForeColor = System.Drawing.Color.Black;
-            this.lbltext.Location = new System.Drawing.Point(29, 5);
+            this.lbltext.Location = new System.Drawing.Point(17, 21);
             this.lbltext.Name = "lbltext";
-            this.lbltext.Size = new System.Drawing.Size(417, 69);
+            this.lbltext.Size = new System.Drawing.Size(243, 54);
             this.lbltext.TabIndex = 0;
             this.lbltext.Text = "[TEXT]";
             this.lbltext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,7 +59,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(577, 34);
+            this.panel2.Size = new System.Drawing.Size(392, 34);
             this.panel2.TabIndex = 7;
             // 
             // panel3
@@ -76,7 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(109, 9);
+            this.label1.Location = new System.Drawing.Point(53, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 0;
@@ -88,7 +88,7 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(33, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(498, 91);
+            this.panel1.Size = new System.Drawing.Size(322, 91);
             this.panel1.TabIndex = 6;
             // 
             // btnok
@@ -96,7 +96,7 @@
             this.btnok.BackColor = System.Drawing.Color.White;
             this.btnok.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnok.ForeColor = System.Drawing.Color.Black;
-            this.btnok.Location = new System.Drawing.Point(243, 129);
+            this.btnok.Location = new System.Drawing.Point(147, 129);
             this.btnok.Name = "btnok";
             this.btnok.Size = new System.Drawing.Size(60, 40);
             this.btnok.TabIndex = 5;
@@ -109,7 +109,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(577, 174);
+            this.ClientSize = new System.Drawing.Size(392, 174);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnok);

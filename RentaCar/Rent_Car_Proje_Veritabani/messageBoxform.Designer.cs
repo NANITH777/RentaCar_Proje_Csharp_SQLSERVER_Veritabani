@@ -42,9 +42,9 @@
             // 
             this.lbltext.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltext.ForeColor = System.Drawing.Color.Black;
-            this.lbltext.Location = new System.Drawing.Point(37, 16);
+            this.lbltext.Location = new System.Drawing.Point(18, 18);
             this.lbltext.Name = "lbltext";
-            this.lbltext.Size = new System.Drawing.Size(489, 54);
+            this.lbltext.Size = new System.Drawing.Size(242, 54);
             this.lbltext.TabIndex = 0;
             this.lbltext.Text = "[TEXT]";
             this.lbltext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -56,7 +56,7 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(33, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(567, 91);
+            this.panel1.Size = new System.Drawing.Size(281, 91);
             this.panel1.TabIndex = 3;
             // 
             // btnok
@@ -64,7 +64,7 @@
             this.btnok.BackColor = System.Drawing.Color.White;
             this.btnok.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnok.ForeColor = System.Drawing.Color.Black;
-            this.btnok.Location = new System.Drawing.Point(286, 133);
+            this.btnok.Location = new System.Drawing.Point(147, 133);
             this.btnok.Name = "btnok";
             this.btnok.Size = new System.Drawing.Size(60, 40);
             this.btnok.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(640, 34);
+            this.panel2.Size = new System.Drawing.Size(354, 34);
             this.panel2.TabIndex = 4;
             // 
             // panel3
@@ -107,7 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OrangeRed;
-            this.ClientSize = new System.Drawing.Size(640, 174);
+            this.ClientSize = new System.Drawing.Size(354, 174);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnok);
