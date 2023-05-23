@@ -67,7 +67,6 @@ namespace Rent_Car_Proje_Veritabani
                 {
                     sericombo.Items.Add("Maxima");
                     sericombo.Items.Add("Rogue");
-                    sericombo.Items.Add("Rogue");
                     sericombo.Items.Add("Titan");
                 }
                 else if (markacombo.SelectedIndex == 5)
