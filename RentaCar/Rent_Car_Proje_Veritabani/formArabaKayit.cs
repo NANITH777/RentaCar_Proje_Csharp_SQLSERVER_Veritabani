@@ -95,8 +95,6 @@ namespace Rent_Car_Proje_Veritabani
             com2.Parameters.AddWithValue("@seri", sericombo.Text);
             com2.Parameters.AddWithValue("@yil", yiltxt.Text);
             com2.Parameters.AddWithValue("@renk", renktxt.Text);
-
-
             com2.Parameters.AddWithValue("@koltuksayisi", int.Parse(txtkoltuk.Text));
             com2.Parameters.AddWithValue("@yakit", yakitcombo.Text);
             com2.Parameters.AddWithValue("@kiraucreti", int.Parse(ucrettxt.Text));

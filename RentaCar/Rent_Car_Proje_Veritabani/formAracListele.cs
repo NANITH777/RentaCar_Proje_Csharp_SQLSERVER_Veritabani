@@ -70,7 +70,7 @@ namespace Rent_Car_Proje_Veritabani
             com.Parameters.AddWithValue("@koltuksayisi", int.Parse(txtkoltuk.Text));
             com.Parameters.AddWithValue("@yakit", yakitcombo.Text);
             com.Parameters.AddWithValue("@kiraucreti", int.Parse(ucrettxt.Text));
-            com.Parameters.AddWithValue("@resim", pictureBox2.ImageLocation);
+            com.Parameters.AddWithValue("@resim", pictureBox1.ImageLocation);
             com.Parameters.AddWithValue("@tarih", DateTime.Now.ToString());
 
             arackiralama.ekle_sil_guncelle(com, query);
