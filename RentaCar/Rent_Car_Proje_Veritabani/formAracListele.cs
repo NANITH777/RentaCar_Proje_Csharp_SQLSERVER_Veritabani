@@ -147,7 +147,7 @@ namespace Rent_Car_Proje_Veritabani
                 }
                 if (comboAraclar.SelectedIndex == 2)
                 {
-                    string query = " select * from arac where durumu= 'DOLU'";
+                    string query = " select * from arac where durumu= 'kiralik(DOLU)'";
                     SqlDataAdapter adtr2 = new SqlDataAdapter();
                     dataGridView1.DataSource = arackiralama.listele(adtr2, query);
                 }

@@ -38,7 +38,7 @@ namespace Rent_Car_Proje_Veritabani
             adtr = new SqlDataAdapter(query, connect);
             adtr.Fill(tablo);
             connect.Close();
-            return tablo;
+            return tablo;     
         }
 
         public void Bos_Araclar(ComboBox combo, string query)
