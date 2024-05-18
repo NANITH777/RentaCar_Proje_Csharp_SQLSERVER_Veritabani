@@ -27,7 +27,7 @@ namespace Rent_Car_Proje_Veritabani
         private void btnlogin_Click(object sender, EventArgs e)
         {
                   
-            SqlConnection connect = new SqlConnection("Data Source=DESKTOP-BOU9IP8;Initial Catalog=RentaCar;Integrated Security=True");
+            SqlConnection connect = new SqlConnection("Data Source=DESKTOP-2H8LHRK;Initial Catalog=RentaCar;Integrated Security=True;");
             
           
 

@@ -11,7 +11,7 @@ namespace Rent_Car_Proje_Veritabani
 {
     internal class Arac_kiralama
     {
-        SqlConnection connect = new SqlConnection("Data Source=DESKTOP-BOU9IP8;Initial Catalog=RentaCar;Integrated Security=True");
+        SqlConnection connect = new SqlConnection("Data Source=DESKTOP-2H8LHRK;Initial Catalog=RentaCar;Integrated Security=True;");
         DataTable tablo;
         public void ekle_sil_guncelle(SqlCommand com, string query)
         {
